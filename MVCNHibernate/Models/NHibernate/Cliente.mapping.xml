@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true" assembly="MVCNHibernate" namespace="MVCNHibernate.Models">
+  <class name="Cliente" table="clientes" dynamic-update="true" >
+    <cache usage="read-write"/>
+    <id name="Id" column="Id" type="int">
+      <generator class="native" />
+    </id>
+    <property name="nome" />
+    <property name="email" />
+    <property name="cpf" />
+    <property name="telefone" />
+   </class>
+</hibernate-mapping>
